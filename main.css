@@ -1,0 +1,115 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #003049;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Comic Sans Ms';
+}
+h1{
+    color: #F77F00;
+    font-size: 5vw;
+    text-align: center;
+    margin: 0;
+    padding-top: 15%;
+    text-shadow: 2px 4px 25px #000000;
+    -webkit-text-stroke: 2px #000000 ;
+}
+h2{
+    color: #F77F00;
+    font-size: 3vw;
+    text-align: center;
+    text-decoration: underline;
+
+}
+@media (orientation: portrait){
+    .header{
+        height: 25vh;
+    }
+    header{
+        display: none;
+    }
+}
+@media (orientation: landscape){
+    .header{
+        height: 80vh;
+    }
+    header{
+        display: flex;
+        position: fixed;
+    }
+}
+.header{
+    background-image: url(images/header-bg.png);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+header{
+    background-color: #FCBF49;
+    width: 100%;
+}
+.header-btns{
+    flex-grow: 1 !important;
+}
+@media (max-width: 1350px) {
+    .header-btn{
+        padding: 3px 1vh !important;
+    }
+}
+@media (width>1350px) {
+    .header-btn{
+        padding: 3px 6vh !important;
+    }
+}
+.header-btn{
+    text-align: center;
+    display: inline-block !important;
+    text-decoration: none !important;
+    background-color: #fcbf49 !important;
+    color: #d62828 !important;
+    border: 2px solid #fcbf49 !important;
+    border-radius: 7px !important;
+    font-size: 16px !important; 
+    transition: all 0.6s ease !important;
+}
+.header-btn:hover{
+    text-decoration: none !important; 
+    background-color: #f77f00 !important;
+    color: #000000 !important;
+    border-color: #000000 !important;
+    border-radius: 7.5px !important;
+}
+.header-img{
+    width: 3vh;
+    height: 3vh;
+    top: 0;
+    margin: 2px;
+}
+.lang-btn{
+    display: inline-block !important;
+    text-align: center;
+    text-decoration: none !important;
+    border: 2px solid #fcbf49 !important;
+    border-radius: 7px !important;
+    font-size: 16px !important;
+    margin-right: 20px;
+}
+.main-block{
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 15%;
+    padding: 30px;
+    font-size: 1.5vw;
+    text-align: justify;
+    border: #003049;
+    border-radius: 20px;
+}
+.main-block>img{
+    border: #003049;
+    border-radius: 20px;
+    width: 50%;
+    margin: 3%;
+    margin-left: 20%;
+}
